@@ -202,6 +202,14 @@ const projects = [
   { title: "Student Grade Calculator", desc: "A command-line program that reads marks for a class, calculates averages and grades, and saves a report to a text file.", tools: ["C", "File I/O"], link: GITHUB },
   { title: "Expense Tracker Script", desc: "A small Python script I use to log daily spending in a CSV and print a weekly summary by category.", tools: ["Python", "CSV"], link: GITHUB },
   { title: "This Portfolio", desc: "The site you're looking at. Built to practise layout, responsive design and basic accessibility.", tools: ["HTML", "CSS", "React"], link: GITHUB },
+
+  {
+    title: "AI Chatbot",
+    desc: "An interactive AI chatbot built using Botpress. Try it out and explore its conversational capabilities.",
+    tools: ["Botpress", "AI", "Webchat"],
+    link: "https://cdn.botpress.cloud/webchat/v5.0/shareable.html?configUrl=https://files.bpcontent.cloud/2026/10/14/13/20261014134420-OJS2KXFF.json",
+  },
+
 ];
 
 function Projects() {
