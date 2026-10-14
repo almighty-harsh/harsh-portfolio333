@@ -6,10 +6,10 @@ import { ArrowRight, ArrowUpRight, Github, Linkedin, Mail, MapPin, Menu, X, User
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "[Your Name] — B.Tech Student Portfolio" },
-      { name: "description", content: "Portfolio of [Your Name], a first-year B.Tech student. Projects, skills, education and contact." },
-      { property: "og:title", content: "[Your Name] — B.Tech Student Portfolio" },
-      { property: "og:description", content: "Projects, skills and education of a first-year B.Tech student." },
+      { title: "Harsh Kumar — Electronics & Communication Student Portfolio" },
+      { name: "description", content: "Portfolio of Harsh Kumar, a first-year B.Tech student in Electronics and Communication at JECRC University, Jaipur. Projects, skills, education and contact." },
+      { property: "og:title", content: "Harsh Kumar — Electronics & Communication Student Portfolio" },
+      { property: "og:description", content: "Projects, skills and education of Harsh Kumar, a first-year B.Tech student at JECRC University, Jaipur." },
     ],
   }),
   component: Index,
@@ -60,7 +60,7 @@ function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-navy-border bg-navy text-navy-foreground">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 md:px-8">
-        <a href="#home" className="font-display text-lg font-semibold tracking-tight">[Your Name]</a>
+        <a href="#home" className="font-display text-lg font-semibold tracking-tight">Harsh Kumar</a>
         <nav aria-label="Main" className="hidden items-center gap-7 text-sm md:flex">
           {nav.map((n) => <a key={n.id} href={`#${n.id}`} className="nav-link text-navy-muted hover:text-navy-foreground">{n.label}</a>)}
           <span className="h-4 w-px bg-navy-border" aria-hidden />
@@ -90,10 +90,10 @@ function Hero() {
       <div className="mx-auto grid max-w-6xl gap-12 px-5 py-20 md:grid-cols-12 md:px-8 md:py-28">
         <div className="md:col-span-7">
           <p className="mb-6 font-display text-sm text-navy-muted">Hi, I'm</p>
-          <h1 className="text-5xl font-bold md:text-7xl">[Your Name]</h1>
-          <p className="mt-5 font-display text-lg text-accent md:text-xl">B.Tech Student | [Your Branch]</p>
+          <h1 className="text-5xl font-bold md:text-7xl">Harsh Kumar</h1>
+          <p className="mt-5 font-display text-lg text-accent md:text-xl">B.Tech Student | Electronics and Communication</p>
           <p className="mt-6 max-w-lg text-navy-muted">
-            First-year student at [College Name]. I write small programs in C and Python, build simple web pages, and spend most evenings figuring out why my code doesn't compile.
+            First-year student at JECRC University, Jaipur. I write small programs in C and Python, build simple web pages, and spend most evenings figuring out why my code doesn't compile.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
             <a href="#projects" className="inline-flex items-center gap-2 rounded-sm bg-accent px-5 py-3 text-sm font-medium text-accent-foreground transition-opacity hover:opacity-90">
@@ -108,7 +108,7 @@ function Hero() {
           <p className="label-num text-navy-muted">Currently learning</p>
           <p className="mt-2">Data structures in C — linked lists right now, stacks next.</p>
           <p className="label-num mt-8 text-navy-muted">Based in</p>
-          <p className="mt-2">[City], India</p>
+          <p className="mt-2">Jaipur, India</p>
         </aside>
       </div>
     </section>
@@ -128,7 +128,7 @@ function About() {
           <SectionLabel n="01">About</SectionLabel>
           <h2 className="text-3xl font-semibold md:text-4xl">A bit about me</h2>
           <div className="mt-6 space-y-4 text-muted-foreground">
-            <p>I'm in my first semester of B.Tech in [Your Branch]. Before college I had only written a few lines of HTML. Now I'm writing C programs for labs and Python scripts for fun.</p>
+            <p>I'm in my first semester of B.Tech in Electronics and Communication at JECRC University. Before college I had only written a few lines of HTML. Now I'm writing C programs for labs and Python scripts for fun.</p>
             <p>I like understanding how things work under the hood — how memory is laid out, how a browser turns HTML into a page. I also enjoy chess and reading about space missions.</p>
             <p>Over the next few years I want to get good at backend development, contribute to an open-source project, and land a summer internship by my third year.</p>
           </div>
@@ -144,7 +144,7 @@ function About() {
 }
 
 const education = [
-  { period: "2026 — Present", title: "B.Tech, [Your Branch]", place: "[College Name]", note: "1st semester. Courses: Programming in C, Engineering Maths, Physics." },
+  { period: "2026 — Present", title: "B.Tech, Electronics and Communication", place: "JECRC University, Jaipur", note: "1st semester. Courses: Programming in C, Engineering Maths, Physics." },
   { period: "2024 — 2026", title: "Class 12 (Science, PCM)", place: "[School Name], [Board]", note: "Scored [XX]%. Took Computer Science as an elective." },
   { period: "2024", title: "Class 10", place: "[School Name], [Board]", note: "Scored [XX]%." },
 ];
@@ -239,7 +239,7 @@ const certs = [
   { name: "Programming for Everybody (Python)", org: "Coursera — University of Michigan", year: "2026" },
   { name: "Responsive Web Design", org: "freeCodeCamp", year: "2026" },
   { name: "Introduction to C Programming", org: "NPTEL", year: "2026" },
-  { name: "Participant, college coding contest", org: "[College Name] Coding Club", year: "2026" },
+  { name: "Participant, college coding contest", org: "JECRC University Coding Club", year: "2026" },
 ];
 
 function Certifications() {
@@ -304,7 +304,7 @@ function Contact() {
           <p className="mt-4 text-muted-foreground">Open to study groups, hackathon teams and internship advice. I usually reply within a day or two.</p>
           <ul className="mt-8 space-y-4 text-sm">
             <li className="flex items-center gap-3"><Mail size={17} className="text-accent" aria-hidden /><a href={`mailto:${EMAIL}`} className="nav-link">{EMAIL}</a></li>
-            <li className="flex items-center gap-3"><MapPin size={17} className="text-accent" aria-hidden />[City], India</li>
+            <li className="flex items-center gap-3"><MapPin size={17} className="text-accent" aria-hidden />Jaipur, India</li>
           </ul>
         </div>
         <form onSubmit={onSubmit} noValidate className="space-y-5 md:col-span-6 md:col-start-7">
@@ -334,7 +334,7 @@ function Footer() {
   return (
     <footer className="bg-navy text-navy-foreground">
       <div className="mx-auto flex max-w-6xl flex-col gap-4 px-5 py-8 text-sm md:flex-row md:items-center md:justify-between md:px-8">
-        <p className="text-navy-muted">© 2026 [Your Name]. Built by hand during my first semester.</p>
+        <p className="text-navy-muted">© 2026 Harsh Kumar. Built by hand during my first semester.</p>
         <SocialIcons />
       </div>
     </footer>
