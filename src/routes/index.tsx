@@ -317,8 +317,8 @@ function Contact() {
           ))}
           <div>
             <label htmlFor="message" className="text-sm font-medium">Message</label>
-            <textarea id="message" name="message" rows={5} maxLength={1000} className={field} aria-invalid={!!errors.message} />
-            {errors.message && <p className="mt-1 text-xs text-destructive">{errors.message}</p>}
+            <textarea id="message" name="message" rows={5} maxLength={1000} className={field} aria-invalid={!!errors["message"]} />
+            {errors["message"] && <p className="mt-1 text-xs text-destructive">{errors["message"]}</p>}
           </div>
           <button type="submit" className="inline-flex items-center gap-2 rounded-sm bg-primary px-5 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90">
             Send message <ArrowRight size={16} />
