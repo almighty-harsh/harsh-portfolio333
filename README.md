@@ -1,22 +1,17 @@
 # Harsh Portfolio333
 
-Implement exactly the screenshot and nothing else
+Implementing my 1st portfolio including chatbot
 
-This project was built with [Lovable](https://lovable.dev).
+This project was built with (https://lovable.dev).
 
 **Live app**: https://harsh-portfolio333.lovable.app
 
-## Build with Lovable
+## Build with using AI assistant Lovable
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/1491e5c5-58a4-44fc-b484-442dd29c8129).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+Its my 1sr project as a beginner.
 
 ## Development
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
 ```sh
 git clone <this-repository-url>
